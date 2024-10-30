@@ -1,0 +1,94 @@
+/*
+|-----------------------------------------------------------------------------------------
+| Close icons
+|-----------------------------------------------------------------------------------------
+*/
+@font-face {
+  font-family: "FlaticonClose";
+  src: url("../fonts/FlaticonClose.eot");
+  src: url("../fonts/FlaticonClose.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/FlaticonClose.woff") format("woff"),
+       url("../fonts/FlaticonClose.ttf") format("truetype"),
+       url("../fonts/FlaticonClose.svg#FlaticonClose") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "FlaticonClose";
+    src: url("../fonts/FlaticonClose.svg#FlaticonClose") format("svg");
+  }
+}
+
+[class^="mppfic-"], [class*=" mppfic-"] {
+  display: inline-block;
+  font: normal normal normal 14px/1 FlaticonClose;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mppfic-close:before { content: "\f100"; }
+.mppfic-close-1:before { content: "\f101"; }
+.mppfic-close-2:before { content: "\f102"; }
+.mppfic-close-cancel-circular:before { content: "\f103"; }
+.mppfic-close-cancel-circular-1:before { content: "\f104"; }
+.mppfic-close-cancel-circular-2:before { content: "\f105"; }
+.mppfic-close-cancel-circular-3:before { content: "\f106"; }
+.mppfic-close-cancel-circular-4:before { content: "\f107"; }
+.mppfic-close-clean:before { content: "\f108"; }
+.mppfic-close-remove:before { content: "\f109"; }
+.mppfic-close-square:before { content: "\f10a"; }
+.mppfic-close-square-1:before { content: "\f10b"; }
+.mppfic-close-square-2:before { content: "\f10c"; }
+
+
+
+/*
+|-----------------------------------------------------------------------------------------
+| Play icons
+|-----------------------------------------------------------------------------------------
+*/
+@font-face {
+  font-family: "FlaticonPlay";
+  src: url("../fonts/FlaticonPlay.eot");
+  src: url("../fonts/FlaticonPlay.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/FlaticonPlay.woff") format("woff"),
+       url("../fonts/FlaticonPlay.ttf") format("truetype"),
+       url("../fonts/FlaticonPlay.svg#FlaticonPlay") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "FlaticonPlay";
+    src: url("../fonts/FlaticonPlay.svg#FlaticonPlay") format("svg");
+  }
+}
+
+[class^="mppfip-"], [class*=" mppfip-"] {
+  display: inline-block;
+  font: normal normal normal 14px/1 FlaticonPlay;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mppfip-pause:before          { content: "\f100"; }
+.mppfip-play:before           { content: "\f101"; }
+.mppfip-play-arrow:before     { content: "\f103"; }
+.mppfip-play-circle:before    { content: "\f104"; }
+.mppfip-play-double:before    { content: "\f105"; }
+.mppfip-play-movie:before     { content: "\f106"; }
+.mppfip-play-next:before      { content: "\f107"; }
+.mppfip-play-next-2:before    { content: "\f102"; }
+.mppfip-play-outline:before   { content: "\f108"; }
+.mppfip-play-outline-2:before { content: "\f109"; }
+.mppfip-play-prev:before      { content: "\f10a"; }
+.mppfip-play-radius:before    { content: "\f10b"; }
+.mppfip-play-square:before    { content: "\f10c"; }
+.mppfip-stop:before           { content: "\f10d"; }

@@ -1,0 +1,697 @@
+/*
+|-----------------------------------------------------------------------------------------
+| General
+|-----------------------------------------------------------------------------------------
+*/
+.mpp-clearfix:before,
+.mpp-clearfix:after {
+  content: "";
+  display: table; }
+
+.mpp-clearfix:after {
+  clear: both; }
+
+.mpp-clearfix {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
+.mpp-disable-page-scroll {
+  overflow: hidden !important;
+  margin: 0;
+  padding: 0; }
+
+.mpp-container {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #444; }
+  .mpp-container * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .mpp-container *:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .mpp-container ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #868686; }
+  .mpp-container ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #868686; }
+  .mpp-container :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #868686; }
+  .mpp-container :-moz-placeholder {
+    /* Firefox 18- */
+    color: #868686; }
+
+/*
+|-----------------------------------------------------------------------------------------
+| Popup
+|-----------------------------------------------------------------------------------------
+*/
+.mpp-popup {
+  display: none;
+  position: fixed;
+  z-index: 99999999;
+  left: 50%;
+  top: 50%;
+  width: 640px;
+  height: 360px;
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  font-size: 16px;
+  background: transparent;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important; }
+  .mpp-popup.mpp-position-top-left {
+    top: 0px;
+    left: 15px;
+    right: auto;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  .mpp-popup.mpp-position-top-center {
+    top: 0px;
+    left: 50%;
+    right: auto;
+    -webkit-transform-origin: center top;
+    -ms-transform-origin: center top;
+    transform-origin: center top;
+    -webkit-transform: translate(-50%, 0px) scale(1);
+    -ms-transform: translate(-50%, 0px) scale(1);
+    transform: translate(-50%, 0px) scale(1); }
+  .mpp-popup.mpp-position-top-right {
+    top: 0px;
+    right: 15px;
+    left: auto;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  .mpp-popup.mpp-position-middle-left {
+    top: 50%;
+    left: 0px;
+    right: auto;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transform: translate(0px, -50%) scale(1);
+    -ms-transform: translate(0px, -50%) scale(1);
+    transform: translate(0px, -50%) scale(1); }
+  .mpp-popup.mpp-position-middle-center {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1); }
+  .mpp-popup.mpp-position-middle-right {
+    top: 50%;
+    right: 0px;
+    left: auto;
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
+    transform-origin: right center;
+    -webkit-transform: translate(0px, -50%) scale(1);
+    -ms-transform: translate(0px, -50%) scale(1);
+    transform: translate(0px, -50%) scale(1); }
+
+.mpp-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.mpp-content {
+  width: 100%;
+  height: 100%; }
+  .mpp-content i {
+    font-size: 1em; }
+  .mpp-content .mpp-content-desktop,
+  .mpp-content .mpp-content-mobile {
+    overflow: visible;
+    position: relative;
+    left: 50%;
+    top: 0;
+    -webkit-transform-origin: center top;
+    -ms-transform-origin: center top;
+    transform-origin: center top;
+    -webkit-transform: translate(-50%, 0px) scale(1);
+    -ms-transform: translate(-50%, 0px) scale(1);
+    transform: translate(-50%, 0px) scale(1); }
+  .mpp-content .mpp-content-mobile {
+    display: none; }
+
+.mpp-popup .mpp-close-icon {
+  position: absolute;
+  z-index: 20;
+  display: none;
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 21px;
+  width: 21px;
+  height: 21px;
+  vertical-align: top; }
+
+.mpp-popup.mpp-has-wp-editor {
+  -webkit-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important; }
+  .mpp-popup.mpp-has-wp-editor .mpp-close-icon {
+    display: block; }
+  .mpp-popup.mpp-has-wp-editor .mpp-content {
+    padding: 20px 36px; }
+  .mpp-popup.mpp-has-wp-editor .mpp-content-wp-editor {
+    display: inline-block;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 2px; }
+    .mpp-popup.mpp-has-wp-editor .mpp-content-wp-editor > p:last-child {
+      margin-bottom: 0 !important; }
+
+.mpp-link-edit-popup {
+  display: block;
+  z-index: 10;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  font-size: 10px;
+  background: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .mpp-link-edit-popup i {
+    font-size: inherit;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 0; }
+    .mpp-link-edit-popup i:hover {
+      color: white; }
+
+/*
+|-----------------------------------------------------------------------------------------
+| Inline
+|-----------------------------------------------------------------------------------------
+*/
+/*
+|-----------------------------------------------------------------------------------------
+| Overlay
+|-----------------------------------------------------------------------------------------
+*/
+.mpp-overlay {
+  display: none;
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 99999998; }
+  .mpp-overlay.mpp-overlay-close-popup {
+    cursor: pointer; }
+  .mpp-overlay .mpp-overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 1, 5, 0.8);
+    opacity: 1; }
+
+/*
+|-----------------------------------------------------------------------------------------
+| Elements
+|-----------------------------------------------------------------------------------------
+*/
+.mpp-element {
+  position: absolute;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important; }
+  .mpp-element * {
+    -webkit-transition: color 120ms ease-in-out, border 120ms ease-in-out;
+    -moz-transition: color 120ms ease-in-out, border 120ms ease-in-out;
+    -o-transition: color 120ms ease-in-out, border 120ms ease-in-out;
+    transition: color 120ms ease-in-out, border 120ms ease-in-out; }
+
+.mpp-element .mpp-element-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important; }
+  .mpp-element .mpp-element-content input, .mpp-element .mpp-element-content textarea, .mpp-element .mpp-element-content select {
+    max-width: 100% !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+    margin: 0 !important; }
+  .mpp-element .mpp-element-content img {
+    margin: 0 !important; }
+
+.mpp-element:not(.mpp-element-shortcode) .mpp-element-content {
+  color: #444444;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  line-height: 22px;
+  white-space: normal;
+  text-transform: none;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 0px;
+  border-color: rgba(255, 255, 255, 0);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.mpp-element.mpp-element-close-icon {
+  cursor: pointer !important; }
+
+.mpp-element.mpp-element-text-html .mpp-element-content > h1, .mpp-element.mpp-element-text-html .mpp-element-content > h2, .mpp-element.mpp-element-text-html .mpp-element-content > h3, .mpp-element.mpp-element-text-html .mpp-element-content > h4, .mpp-element.mpp-element-text-html .mpp-element-content > h5, .mpp-element.mpp-element-text-html .mpp-element-content > p, .mpp-element.mpp-element-text-html .mpp-element-content > span, .mpp-element.mpp-element-text-html .mpp-element-content > strong {
+  color: inherit; }
+
+.mpp-element.mpp-element-text-html .mpp-element-content > h1, .mpp-element.mpp-element-text-html .mpp-element-content > h2, .mpp-element.mpp-element-text-html .mpp-element-content > h3, .mpp-element.mpp-element-text-html .mpp-element-content > h4, .mpp-element.mpp-element-text-html .mpp-element-content > h5, .mpp-element.mpp-element-text-html .mpp-element-content > p, .mpp-element.mpp-element-text-html .mpp-element-content > span, .mpp-element.mpp-element-text-html .mpp-element-content > strong, .mpp-element.mpp-element-text-html .mpp-element-content > a, .mpp-element.mpp-element-text-html .mpp-element-content > a:hover, .mpp-element.mpp-element-text-html .mpp-element-content > a:focus {
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none; }
+
+.mpp-element.mpp-element-button,
+.mpp-element.mpp-element-field_submit {
+  cursor: pointer !important; }
+  .mpp-element.mpp-element-button .mpp-element-content i,
+  .mpp-element.mpp-element-field_submit .mpp-element-content i {
+    line-height: inherit;
+    font-size: 1em;
+    margin: 0;
+    padding: 0 2px;
+    color: inherit;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+    vertical-align: middle; }
+  @media only screen and (max-width: 600px) {
+    .mpp-element.mpp-element-button .mpp-element-content i,
+    .mpp-element.mpp-element-field_submit .mpp-element-content i {
+      padding: 0; } }
+  .mpp-element.mpp-element-button .mpp-element-content > h1, .mpp-element.mpp-element-button .mpp-element-content > h2, .mpp-element.mpp-element-button .mpp-element-content > h3, .mpp-element.mpp-element-button .mpp-element-content > h4, .mpp-element.mpp-element-button .mpp-element-content > h5, .mpp-element.mpp-element-button .mpp-element-content > p, .mpp-element.mpp-element-button .mpp-element-content > span, .mpp-element.mpp-element-button .mpp-element-content > strong, .mpp-element.mpp-element-button .mpp-element-content > a, .mpp-element.mpp-element-button .mpp-element-content > a:hover, .mpp-element.mpp-element-button .mpp-element-content > a:focus,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > h1,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > h2,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > h3,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > h4,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > h5,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > p,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > span,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > strong,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > a,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > a:hover,
+  .mpp-element.mpp-element-field_submit .mpp-element-content > a:focus {
+    margin: 0;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none; }
+
+.mpp-element.mpp-element-image img {
+  display: block;
+  width: 100%;
+  border-radius: inherit; }
+
+.mpp-element.mpp-element-object .mpp-element-content i {
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1em !important;
+  width: auto !important;
+  top: auto !important;
+  height: auto !important;
+  vertical-align: middle !important; }
+
+.mpp-element.mpp-element-object .mpp-element-content img {
+  max-width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: text-top !important; }
+
+.mpp-element.mpp-element-field_first_name .mpp-element-content input,
+.mpp-element.mpp-element-field_last_name .mpp-element-content input,
+.mpp-element.mpp-element-field_email .mpp-element-content input,
+.mpp-element.mpp-element-field_phone .mpp-element-content input,
+.mpp-element.mpp-element-custom_field_input_text .mpp-element-content input {
+  display: block;
+  width: 100% !important;
+  height: 100% !important; }
+  .mpp-element.mpp-element-field_first_name .mpp-element-content input:focus,
+  .mpp-element.mpp-element-field_last_name .mpp-element-content input:focus,
+  .mpp-element.mpp-element-field_email .mpp-element-content input:focus,
+  .mpp-element.mpp-element-field_phone .mpp-element-content input:focus,
+  .mpp-element.mpp-element-custom_field_input_text .mpp-element-content input:focus {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+.mpp-element.mpp-element-custom_field_input_hidden {
+  display: none !important; }
+
+.mpp-element.mpp-element-custom_field_input_checkbox .mpp-element-content input[type=checkbox],
+.mpp-element.mpp-element-custom_field_input_checkbox_gdpr .mpp-element-content input[type=checkbox] {
+  visibility: hidden !important;
+  margin: 0 !important; }
+  .mpp-element.mpp-element-custom_field_input_checkbox .mpp-element-content input[type=checkbox]:before,
+  .mpp-element.mpp-element-custom_field_input_checkbox_gdpr .mpp-element-content input[type=checkbox]:before {
+    display: none; }
+
+.mpp-element.mpp-element-custom_field_input_checkbox .mpp-element-content label, .mpp-element.mpp-element-custom_field_input_checkbox .mpp-element-content i,
+.mpp-element.mpp-element-custom_field_input_checkbox_gdpr .mpp-element-content label,
+.mpp-element.mpp-element-custom_field_input_checkbox_gdpr .mpp-element-content i {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: inherit;
+  line-height: 1;
+  border: none;
+  cursor: pointer; }
+
+.mpp-element.mpp-element-custom_field_input_checkbox .mpp-element-content label,
+.mpp-element.mpp-element-custom_field_input_checkbox_gdpr .mpp-element-content label {
+  display: block; }
+
+.mpp-element.mpp-element-custom_field_input_checkbox .mpp-element-content i,
+.mpp-element.mpp-element-custom_field_input_checkbox_gdpr .mpp-element-content i {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .mpp-element.mpp-element-custom_field_input_checkbox .mpp-element-content i:before,
+  .mpp-element.mpp-element-custom_field_input_checkbox_gdpr .mpp-element-content i:before {
+    display: table-cell;
+    vertical-align: middle; }
+
+.mpp-element.mpp-element-custom_field_input_checkbox .mpp-element-content input[type=checkbox]:checked + i,
+.mpp-element.mpp-element-custom_field_input_checkbox_gdpr .mpp-element-content input[type=checkbox]:checked + i {
+  color: black; }
+
+.mpp-element.mpp-element-field_message .mpp-element-content textarea {
+  display: block;
+  width: 100% !important;
+  height: 100% !important; }
+  .mpp-element.mpp-element-field_message .mpp-element-content textarea:focus {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+.mpp-element.mpp-element-video .mpp-video-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: inherit; }
+  .mpp-element.mpp-element-video .mpp-video-poster .mpp-play-icon {
+    cursor: pointer; }
+
+.mpp-element.mpp-element-video .mpp-wrap-video {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  position: relative;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .mpp-element.mpp-element-video .mpp-wrap-video iframe,
+  .mpp-element.mpp-element-video .mpp-wrap-video video {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    height: 100%;
+    width: 100%;
+    display: block; }
+  .mpp-element.mpp-element-video .mpp-wrap-video .video-js, .mpp-element.mpp-element-video .mpp-wrap-video .my-player-dimensions {
+    width: 100% !important;
+    height: 100% !important; }
+
+.mpp-element.mpp-element-video .mpp-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  cursor: pointer; }
+  .mpp-element.mpp-element-video .mpp-play-icon i {
+    font-size: inherit; }
+
+/*
+|-----------------------------------------------------------------------------------------
+| Preloader
+|-----------------------------------------------------------------------------------------
+*/
+.mpp-preloader {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  margin-top: -22px;
+  margin-left: -22px;
+  opacity: 1; }
+  .mpp-preloader.mpp-preloader-image {
+    background: url("../images/popup-preloader.gif") no-repeat center center; }
+  .mpp-preloader.mpp-preloader-animation .mpp-preloader-spinner1,
+  .mpp-preloader.mpp-preloader-animation .mpp-preloader-spinner2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #00ddd2;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: mpp-preloader-animation 1.8s infinite ease-in-out;
+    animation: mpp-preloader-animation 1.8s infinite ease-in-out; }
+  .mpp-preloader.mpp-preloader-animation .mpp-preloader-spinner2 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    background: #3e99ff; }
+
+@-webkit-keyframes mpp-preloader-animation {
+  0%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes mpp-preloader-animation {
+  0%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+/*
+|-----------------------------------------------------------------------------------------
+| Triggers
+|-----------------------------------------------------------------------------------------
+*/
+.mpp-trigger-popup {
+  cursor: pointer; }
+
+/*
+|-----------------------------------------------------------------------------------------
+| Form
+|-----------------------------------------------------------------------------------------
+*/
+.mpp-form-element.mpp-has-error .mpp-error-warning {
+  position: absolute;
+  top: -8px;
+  right: -9px;
+  z-index: 99;
+  width: 18px;
+  height: 16px;
+  background: url("../images/error-warning.png") no-repeat 0 0;
+  display: block;
+  cursor: pointer; }
+
+.mpp-form-element.mpp-has-error.mpp-element-field_first_name input.mpp-input.mpp-error, .mpp-form-element.mpp-has-error.mpp-element-field_last_name input.mpp-input.mpp-error, .mpp-form-element.mpp-has-error.mpp-element-field_email input.mpp-input.mpp-error, .mpp-form-element.mpp-has-error.mpp-element-field_phone input.mpp-input.mpp-error, .mpp-form-element.mpp-has-error.mpp-element-custom_field_input_text input.mpp-input.mpp-error {
+  border-color: #DA2121 !important; }
+
+.mpp-form-element.mpp-has-error.mpp-element-custom_field_input_checkbox .mpp-element-content, .mpp-form-element.mpp-has-error.mpp-element-custom_field_input_checkbox_gdpr .mpp-element-content {
+  border-color: #DA2121 !important; }
+
+.mpp-form-element.mpp-has-error.mpp-element-custom_field_dropdown select.mpp-select.mpp-error {
+  border-color: #DA2121 !important; }
+
+.mpp-form-element.mpp-has-error.mpp-element-field_message textarea.mpp-textarea.mpp-error {
+  border-color: #DA2121 !important; }
+
+.mpp-processing-form {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid #00B5AD;
+  font-size: 14px;
+  font-family: inherit;
+  color: #444;
+  line-height: 1.6;
+  border-radius: inherit; }
+  .mpp-processing-form .mpp-processing-form-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .mpp-processing-form .mpp-processing-form-footer {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: inherit; }
+    .mpp-processing-form .mpp-processing-form-footer .mpp-back-to-form,
+    .mpp-processing-form .mpp-processing-form-footer .mpp-close-popup {
+      margin: 0 15px;
+      display: inline-block;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 13px; }
+
+/*
+|-----------------------------------------------------------------------------------------
+| Countdown
+|-----------------------------------------------------------------------------------------
+*/
+/*
+|-----------------------------------------------------------------------------------------
+| Link Powered By
+|-----------------------------------------------------------------------------------------
+*/
+.mpp-wrap-link-powered-by {
+  display: none;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 22px;
+  line-height: 22px;
+  padding: 0;
+  padding-right: 6px;
+  padding-left: 5px; }
+  .mpp-wrap-link-powered-by a {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 22px;
+    display: block;
+    text-decoration: none; }
+    .mpp-wrap-link-powered-by a span {
+      text-decoration: underline; }
+    .mpp-wrap-link-powered-by a:hover, .mpp-wrap-link-powered-by a:active, .mpp-wrap-link-powered-by a:focus {
+      color: white; }
+
+.mpp-container.mpp-container-position-bottom-left .mpp-wrap-link-powered-by,
+.mpp-container.mpp-container-position-bottom-center .mpp-wrap-link-powered-by,
+.mpp-container.mpp-container-position-bottom-right .mpp-wrap-link-powered-by {
+  top: -22px;
+  bottom: auto; }
+
+/*
+|---------------------------------------------------------------------------------------------------
+| Kint PHP Debugger - Custom Styles
+|---------------------------------------------------------------------------------------------------
+*/
+.kint {
+  position: relative;
+  left: 180px;
+  z-index: 9999999;
+  width: 70%;
+  margin-bottom: 15px;
+  font-size: 14px; }
+
+.kint dl dt {
+  padding: 8px 12px; }
+
+.kint dl dd dl dt {
+  font-size: 12px;
+  padding: 4px 12px; }
+
+.kint footer {
+  color: #333;
+  font-size: 12px;
+  padding-top: 5px; }
+
+.kint footer li {
+  color: #666;
+  line-height: 20px; }
+
+.kint footer .kint-popup-trigger {
+  display: none; }

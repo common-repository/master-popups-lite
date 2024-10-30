@@ -1,0 +1,106 @@
+#menu-posts-master-popups .wp-menu-image img {
+  padding: 8px 0 0 !important;
+  opacity: 1 !important;
+  width: 16px !important;
+}
+
+#menu-posts-master-popups.wp-has-current-submenu .wp-menu-image {
+  background: url("../images/icon-plugin-active2.png") no-repeat 10px 8px;
+}
+
+#menu-posts-master-popups.wp-has-current-submenu .wp-menu-image img {
+  display: none;
+}
+
+.ampp-topbar {
+  width: 100%;
+  height: 65px;
+  margin: 0 15px 15px -25px;
+  padding: 0;
+  border-right: 25px solid #313a4d;
+  box-sizing: content-box !important;
+  color: white;
+  background: #313a4d url("../images/logo-topbar.png") no-repeat 32px 14px;
+}
+
+.ampp-topbar .ampp-topbar-menu {
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 275px;
+  list-style: none !important;
+}
+
+.ampp-topbar .ampp-topbar-menu * {
+  box-sizing: border-box;
+}
+
+.ampp-topbar .ampp-topbar-menu > li.ampp-topbar-item {
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.ampp-topbar .ampp-topbar-menu > li.ampp-topbar-item a {
+  display: block;
+  padding: 12px 16px;
+  height: 100%;
+  line-height: 1em;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  transition: all 0.3s ease-out;
+}
+
+.ampp-topbar .ampp-topbar-menu > li.ampp-topbar-item a:hover {
+  background: #252c3a;
+  color: white;
+}
+
+.ampp-topbar .ampp-topbar-menu > li.ampp-topbar-item a:focus, .ampp-topbar .ampp-topbar-menu > li.ampp-topbar-item a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.ampp-topbar .ampp-topbar-menu > li.ampp-topbar-item a i {
+  font-size: 18px;
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
+}
+
+.ampp-popup-shortcodes {
+  position: absolute;
+  top: -107px;
+  right: 0;
+}
+
+input.ampp-input-selector,
+textarea.ampp-input-selector {
+  padding: 7px 20px;
+  margin: 0;
+  border: none !important;
+  line-height: 1.6em !important;
+  box-shadow: none !important;
+  background: #DCE0E7 !important;
+  font-size: 13px !important;
+  font-family: monospace !important;
+  border-radius: 3px;
+  color: #373b43 !important;
+}
+
+input.ampp-input-selector:focus,
+textarea.ampp-input-selector:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+input.ampp-input-selector.ampp-input-selector-dark,
+textarea.ampp-input-selector.ampp-input-selector-dark {
+  background: #272e3d !important;
+  color: #bcc4d5 !important;
+  line-height: 1.2em !important;
+}

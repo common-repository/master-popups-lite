@@ -1,0 +1,2335 @@
+@charset "UTF-8";
+/*
+|-----------------------------------------------------------------------------------------
+| Xbox Icons
+|-----------------------------------------------------------------------------------------
+*/
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'XboxFontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.xbox-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 XboxFontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* makes the font 33% larger relative to the icon container */
+.xbox-icon-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+.xbox-icon-2x {
+  font-size: 2em; }
+
+.xbox-icon-3x {
+  font-size: 3em; }
+
+.xbox-icon-4x {
+  font-size: 4em; }
+
+.xbox-icon-5x {
+  font-size: 5em; }
+
+.xbox-icon-fw {
+  width: 1.28571em;
+  text-align: center; }
+
+.xbox-icon-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none; }
+  .xbox-icon-ul > li {
+    position: relative; }
+
+.xbox-icon-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center; }
+  .xbox-icon-li.xbox-icon-lg {
+    left: -1.85714em; }
+
+.xbox-icon-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em; }
+
+.xbox-icon-pull-left {
+  float: left; }
+
+.xbox-icon-pull-right {
+  float: right; }
+
+.xbox-icon.xbox-icon-pull-left {
+  margin-right: .3em; }
+
+.xbox-icon.xbox-icon-pull-right {
+  margin-left: .3em; }
+
+/* Deprecated as of 4.4.0 */
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.xbox-icon.pull-left {
+  margin-right: .3em; }
+
+.xbox-icon.pull-right {
+  margin-left: .3em; }
+
+.xbox-icon-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear; }
+
+.xbox-icon-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+.xbox-icon-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.xbox-icon-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.xbox-icon-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+.xbox-icon-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+.xbox-icon-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1); }
+
+:root .xbox-icon-rotate-90,
+:root .xbox-icon-rotate-180,
+:root .xbox-icon-rotate-270,
+:root .xbox-icon-flip-horizontal,
+:root .xbox-icon-flip-vertical {
+  -webkit-filter: none;
+  filter: none; }
+
+.xbox-icon-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle; }
+
+.xbox-icon-stack-1x, .xbox-icon-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.xbox-icon-stack-1x {
+  line-height: inherit; }
+
+.xbox-icon-stack-2x {
+  font-size: 2em; }
+
+.xbox-icon-inverse {
+  color: #fff; }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.xbox-icon-glass:before {
+  content: ""; }
+
+.xbox-icon-music:before {
+  content: ""; }
+
+.xbox-icon-search:before {
+  content: ""; }
+
+.xbox-icon-envelope-o:before {
+  content: ""; }
+
+.xbox-icon-heart:before {
+  content: ""; }
+
+.xbox-icon-star:before {
+  content: ""; }
+
+.xbox-icon-star-o:before {
+  content: ""; }
+
+.xbox-icon-user:before {
+  content: ""; }
+
+.xbox-icon-film:before {
+  content: ""; }
+
+.xbox-icon-th-large:before {
+  content: ""; }
+
+.xbox-icon-th:before {
+  content: ""; }
+
+.xbox-icon-th-list:before {
+  content: ""; }
+
+.xbox-icon-check:before {
+  content: ""; }
+
+.xbox-icon-remove:before,
+.xbox-icon-close:before,
+.xbox-icon-times:before {
+  content: ""; }
+
+.xbox-icon-search-plus:before {
+  content: ""; }
+
+.xbox-icon-search-minus:before {
+  content: ""; }
+
+.xbox-icon-power-off:before {
+  content: ""; }
+
+.xbox-icon-signal:before {
+  content: ""; }
+
+.xbox-icon-gear:before,
+.xbox-icon-cog:before {
+  content: ""; }
+
+.xbox-icon-trash-o:before {
+  content: ""; }
+
+.xbox-icon-home:before {
+  content: ""; }
+
+.xbox-icon-file-o:before {
+  content: ""; }
+
+.xbox-icon-clock-o:before {
+  content: ""; }
+
+.xbox-icon-road:before {
+  content: ""; }
+
+.xbox-icon-download:before {
+  content: ""; }
+
+.xbox-icon-arrow-circle-o-down:before {
+  content: ""; }
+
+.xbox-icon-arrow-circle-o-up:before {
+  content: ""; }
+
+.xbox-icon-inbox:before {
+  content: ""; }
+
+.xbox-icon-play-circle-o:before {
+  content: ""; }
+
+.xbox-icon-rotate-right:before,
+.xbox-icon-repeat:before {
+  content: ""; }
+
+.xbox-icon-refresh:before {
+  content: ""; }
+
+.xbox-icon-list-alt:before {
+  content: ""; }
+
+.xbox-icon-lock:before {
+  content: ""; }
+
+.xbox-icon-flag:before {
+  content: ""; }
+
+.xbox-icon-headphones:before {
+  content: ""; }
+
+.xbox-icon-volume-off:before {
+  content: ""; }
+
+.xbox-icon-volume-down:before {
+  content: ""; }
+
+.xbox-icon-volume-up:before {
+  content: ""; }
+
+.xbox-icon-qrcode:before {
+  content: ""; }
+
+.xbox-icon-barcode:before {
+  content: ""; }
+
+.xbox-icon-tag:before {
+  content: ""; }
+
+.xbox-icon-tags:before {
+  content: ""; }
+
+.xbox-icon-book:before {
+  content: ""; }
+
+.xbox-icon-bookmark:before {
+  content: ""; }
+
+.xbox-icon-print:before {
+  content: ""; }
+
+.xbox-icon-camera:before {
+  content: ""; }
+
+.xbox-icon-font:before {
+  content: ""; }
+
+.xbox-icon-bold:before {
+  content: ""; }
+
+.xbox-icon-italic:before {
+  content: ""; }
+
+.xbox-icon-text-height:before {
+  content: ""; }
+
+.xbox-icon-text-width:before {
+  content: ""; }
+
+.xbox-icon-align-left:before {
+  content: ""; }
+
+.xbox-icon-align-center:before {
+  content: ""; }
+
+.xbox-icon-align-right:before {
+  content: ""; }
+
+.xbox-icon-align-justify:before {
+  content: ""; }
+
+.xbox-icon-list:before {
+  content: ""; }
+
+.xbox-icon-dedent:before,
+.xbox-icon-outdent:before {
+  content: ""; }
+
+.xbox-icon-indent:before {
+  content: ""; }
+
+.xbox-icon-video-camera:before {
+  content: ""; }
+
+.xbox-icon-photo:before,
+.xbox-icon-image:before,
+.xbox-icon-picture-o:before {
+  content: ""; }
+
+.xbox-icon-pencil:before {
+  content: ""; }
+
+.xbox-icon-map-marker:before {
+  content: ""; }
+
+.xbox-icon-adjust:before {
+  content: ""; }
+
+.xbox-icon-tint:before {
+  content: ""; }
+
+.xbox-icon-edit:before,
+.xbox-icon-pencil-square-o:before {
+  content: ""; }
+
+.xbox-icon-share-square-o:before {
+  content: ""; }
+
+.xbox-icon-check-square-o:before {
+  content: ""; }
+
+.xbox-icon-arrows:before {
+  content: ""; }
+
+.xbox-icon-step-backward:before {
+  content: ""; }
+
+.xbox-icon-fast-backward:before {
+  content: ""; }
+
+.xbox-icon-backward:before {
+  content: ""; }
+
+.xbox-icon-play:before {
+  content: ""; }
+
+.xbox-icon-pause:before {
+  content: ""; }
+
+.xbox-icon-stop:before {
+  content: ""; }
+
+.xbox-icon-forward:before {
+  content: ""; }
+
+.xbox-icon-fast-forward:before {
+  content: ""; }
+
+.xbox-icon-step-forward:before {
+  content: ""; }
+
+.xbox-icon-eject:before {
+  content: ""; }
+
+.xbox-icon-chevron-left:before {
+  content: ""; }
+
+.xbox-icon-chevron-right:before {
+  content: ""; }
+
+.xbox-icon-plus-circle:before {
+  content: ""; }
+
+.xbox-icon-minus-circle:before {
+  content: ""; }
+
+.xbox-icon-times-circle:before {
+  content: ""; }
+
+.xbox-icon-check-circle:before {
+  content: ""; }
+
+.xbox-icon-question-circle:before {
+  content: ""; }
+
+.xbox-icon-info-circle:before {
+  content: ""; }
+
+.xbox-icon-crosshairs:before {
+  content: ""; }
+
+.xbox-icon-times-circle-o:before {
+  content: ""; }
+
+.xbox-icon-check-circle-o:before {
+  content: ""; }
+
+.xbox-icon-ban:before {
+  content: ""; }
+
+.xbox-icon-arrow-left:before {
+  content: ""; }
+
+.xbox-icon-arrow-right:before {
+  content: ""; }
+
+.xbox-icon-arrow-up:before {
+  content: ""; }
+
+.xbox-icon-arrow-down:before {
+  content: ""; }
+
+.xbox-icon-mail-forward:before,
+.xbox-icon-share:before {
+  content: ""; }
+
+.xbox-icon-expand:before {
+  content: ""; }
+
+.xbox-icon-compress:before {
+  content: ""; }
+
+.xbox-icon-plus:before {
+  content: ""; }
+
+.xbox-icon-minus:before {
+  content: ""; }
+
+.xbox-icon-asterisk:before {
+  content: ""; }
+
+.xbox-icon-exclamation-circle:before {
+  content: ""; }
+
+.xbox-icon-gift:before {
+  content: ""; }
+
+.xbox-icon-leaf:before {
+  content: ""; }
+
+.xbox-icon-fire:before {
+  content: ""; }
+
+.xbox-icon-eye:before {
+  content: ""; }
+
+.xbox-icon-eye-slash:before {
+  content: ""; }
+
+.xbox-icon-warning:before,
+.xbox-icon-exclamation-triangle:before {
+  content: ""; }
+
+.xbox-icon-plane:before {
+  content: ""; }
+
+.xbox-icon-calendar:before {
+  content: ""; }
+
+.xbox-icon-random:before {
+  content: ""; }
+
+.xbox-icon-comment:before {
+  content: ""; }
+
+.xbox-icon-magnet:before {
+  content: ""; }
+
+.xbox-icon-chevron-up:before {
+  content: ""; }
+
+.xbox-icon-chevron-down:before {
+  content: ""; }
+
+.xbox-icon-retweet:before {
+  content: ""; }
+
+.xbox-icon-shopping-cart:before {
+  content: ""; }
+
+.xbox-icon-folder:before {
+  content: ""; }
+
+.xbox-icon-folder-open:before {
+  content: ""; }
+
+.xbox-icon-arrows-v:before {
+  content: ""; }
+
+.xbox-icon-arrows-h:before {
+  content: ""; }
+
+.xbox-icon-bar-chart-o:before,
+.xbox-icon-bar-chart:before {
+  content: ""; }
+
+.xbox-icon-twitter-square:before {
+  content: ""; }
+
+.xbox-icon-facebook-square:before {
+  content: ""; }
+
+.xbox-icon-camera-retro:before {
+  content: ""; }
+
+.xbox-icon-key:before {
+  content: ""; }
+
+.xbox-icon-gears:before,
+.xbox-icon-cogs:before {
+  content: ""; }
+
+.xbox-icon-comments:before {
+  content: ""; }
+
+.xbox-icon-thumbs-o-up:before {
+  content: ""; }
+
+.xbox-icon-thumbs-o-down:before {
+  content: ""; }
+
+.xbox-icon-star-half:before {
+  content: ""; }
+
+.xbox-icon-heart-o:before {
+  content: ""; }
+
+.xbox-icon-sign-out:before {
+  content: ""; }
+
+.xbox-icon-linkedin-square:before {
+  content: ""; }
+
+.xbox-icon-thumb-tack:before {
+  content: ""; }
+
+.xbox-icon-external-link:before {
+  content: ""; }
+
+.xbox-icon-sign-in:before {
+  content: ""; }
+
+.xbox-icon-trophy:before {
+  content: ""; }
+
+.xbox-icon-github-square:before {
+  content: ""; }
+
+.xbox-icon-upload:before {
+  content: ""; }
+
+.xbox-icon-lemon-o:before {
+  content: ""; }
+
+.xbox-icon-phone:before {
+  content: ""; }
+
+.xbox-icon-square-o:before {
+  content: ""; }
+
+.xbox-icon-bookmark-o:before {
+  content: ""; }
+
+.xbox-icon-phone-square:before {
+  content: ""; }
+
+.xbox-icon-twitter:before {
+  content: ""; }
+
+.xbox-icon-facebook-f:before,
+.xbox-icon-facebook:before {
+  content: ""; }
+
+.xbox-icon-github:before {
+  content: ""; }
+
+.xbox-icon-unlock:before {
+  content: ""; }
+
+.xbox-icon-credit-card:before {
+  content: ""; }
+
+.xbox-icon-feed:before,
+.xbox-icon-rss:before {
+  content: ""; }
+
+.xbox-icon-hdd-o:before {
+  content: ""; }
+
+.xbox-icon-bullhorn:before {
+  content: ""; }
+
+.xbox-icon-bell:before {
+  content: ""; }
+
+.xbox-icon-certificate:before {
+  content: ""; }
+
+.xbox-icon-hand-o-right:before {
+  content: ""; }
+
+.xbox-icon-hand-o-left:before {
+  content: ""; }
+
+.xbox-icon-hand-o-up:before {
+  content: ""; }
+
+.xbox-icon-hand-o-down:before {
+  content: ""; }
+
+.xbox-icon-arrow-circle-left:before {
+  content: ""; }
+
+.xbox-icon-arrow-circle-right:before {
+  content: ""; }
+
+.xbox-icon-arrow-circle-up:before {
+  content: ""; }
+
+.xbox-icon-arrow-circle-down:before {
+  content: ""; }
+
+.xbox-icon-globe:before {
+  content: ""; }
+
+.xbox-icon-wrench:before {
+  content: ""; }
+
+.xbox-icon-tasks:before {
+  content: ""; }
+
+.xbox-icon-filter:before {
+  content: ""; }
+
+.xbox-icon-briefcase:before {
+  content: ""; }
+
+.xbox-icon-arrows-alt:before {
+  content: ""; }
+
+.xbox-icon-group:before,
+.xbox-icon-users:before {
+  content: ""; }
+
+.xbox-icon-chain:before,
+.xbox-icon-link:before {
+  content: ""; }
+
+.xbox-icon-cloud:before {
+  content: ""; }
+
+.xbox-icon-flask:before {
+  content: ""; }
+
+.xbox-icon-cut:before,
+.xbox-icon-scissors:before {
+  content: ""; }
+
+.xbox-icon-copy:before,
+.xbox-icon-files-o:before {
+  content: ""; }
+
+.xbox-icon-paperclip:before {
+  content: ""; }
+
+.xbox-icon-save:before,
+.xbox-icon-floppy-o:before {
+  content: ""; }
+
+.xbox-icon-square:before {
+  content: ""; }
+
+.xbox-icon-navicon:before,
+.xbox-icon-reorder:before,
+.xbox-icon-bars:before {
+  content: ""; }
+
+.xbox-icon-list-ul:before {
+  content: ""; }
+
+.xbox-icon-list-ol:before {
+  content: ""; }
+
+.xbox-icon-strikethrough:before {
+  content: ""; }
+
+.xbox-icon-underline:before {
+  content: ""; }
+
+.xbox-icon-table:before {
+  content: ""; }
+
+.xbox-icon-magic:before {
+  content: ""; }
+
+.xbox-icon-truck:before {
+  content: ""; }
+
+.xbox-icon-pinterest:before {
+  content: ""; }
+
+.xbox-icon-pinterest-square:before {
+  content: ""; }
+
+.xbox-icon-google-plus-square:before {
+  content: ""; }
+
+.xbox-icon-google-plus:before {
+  content: ""; }
+
+.xbox-icon-money:before {
+  content: ""; }
+
+.xbox-icon-caret-down:before {
+  content: ""; }
+
+.xbox-icon-caret-up:before {
+  content: ""; }
+
+.xbox-icon-caret-left:before {
+  content: ""; }
+
+.xbox-icon-caret-right:before {
+  content: ""; }
+
+.xbox-icon-columns:before {
+  content: ""; }
+
+.xbox-icon-unsorted:before,
+.xbox-icon-sort:before {
+  content: ""; }
+
+.xbox-icon-sort-down:before,
+.xbox-icon-sort-desc:before {
+  content: ""; }
+
+.xbox-icon-sort-up:before,
+.xbox-icon-sort-asc:before {
+  content: ""; }
+
+.xbox-icon-envelope:before {
+  content: ""; }
+
+.xbox-icon-linkedin:before {
+  content: ""; }
+
+.xbox-icon-rotate-left:before,
+.xbox-icon-undo:before {
+  content: ""; }
+
+.xbox-icon-legal:before,
+.xbox-icon-gavel:before {
+  content: ""; }
+
+.xbox-icon-dashboard:before,
+.xbox-icon-tachometer:before {
+  content: ""; }
+
+.xbox-icon-comment-o:before {
+  content: ""; }
+
+.xbox-icon-comments-o:before {
+  content: ""; }
+
+.xbox-icon-flash:before,
+.xbox-icon-bolt:before {
+  content: ""; }
+
+.xbox-icon-sitemap:before {
+  content: ""; }
+
+.xbox-icon-umbrella:before {
+  content: ""; }
+
+.xbox-icon-paste:before,
+.xbox-icon-clipboard:before {
+  content: ""; }
+
+.xbox-icon-lightbulb-o:before {
+  content: ""; }
+
+.xbox-icon-exchange:before {
+  content: ""; }
+
+.xbox-icon-cloud-download:before {
+  content: ""; }
+
+.xbox-icon-cloud-upload:before {
+  content: ""; }
+
+.xbox-icon-user-md:before {
+  content: ""; }
+
+.xbox-icon-stethoscope:before {
+  content: ""; }
+
+.xbox-icon-suitcase:before {
+  content: ""; }
+
+.xbox-icon-bell-o:before {
+  content: ""; }
+
+.xbox-icon-coffee:before {
+  content: ""; }
+
+.xbox-icon-cutlery:before {
+  content: ""; }
+
+.xbox-icon-file-text-o:before {
+  content: ""; }
+
+.xbox-icon-building-o:before {
+  content: ""; }
+
+.xbox-icon-hospital-o:before {
+  content: ""; }
+
+.xbox-icon-ambulance:before {
+  content: ""; }
+
+.xbox-icon-medkit:before {
+  content: ""; }
+
+.xbox-icon-fighter-jet:before {
+  content: ""; }
+
+.xbox-icon-beer:before {
+  content: ""; }
+
+.xbox-icon-h-square:before {
+  content: ""; }
+
+.xbox-icon-plus-square:before {
+  content: ""; }
+
+.xbox-icon-angle-double-left:before {
+  content: ""; }
+
+.xbox-icon-angle-double-right:before {
+  content: ""; }
+
+.xbox-icon-angle-double-up:before {
+  content: ""; }
+
+.xbox-icon-angle-double-down:before {
+  content: ""; }
+
+.xbox-icon-angle-left:before {
+  content: ""; }
+
+.xbox-icon-angle-right:before {
+  content: ""; }
+
+.xbox-icon-angle-up:before {
+  content: ""; }
+
+.xbox-icon-angle-down:before {
+  content: ""; }
+
+.xbox-icon-desktop:before {
+  content: ""; }
+
+.xbox-icon-laptop:before {
+  content: ""; }
+
+.xbox-icon-tablet:before {
+  content: ""; }
+
+.xbox-icon-mobile-phone:before,
+.xbox-icon-mobile:before {
+  content: ""; }
+
+.xbox-icon-circle-o:before {
+  content: ""; }
+
+.xbox-icon-quote-left:before {
+  content: ""; }
+
+.xbox-icon-quote-right:before {
+  content: ""; }
+
+.xbox-icon-spinner:before {
+  content: ""; }
+
+.xbox-icon-circle:before {
+  content: ""; }
+
+.xbox-icon-mail-reply:before,
+.xbox-icon-reply:before {
+  content: ""; }
+
+.xbox-icon-github-alt:before {
+  content: ""; }
+
+.xbox-icon-folder-o:before {
+  content: ""; }
+
+.xbox-icon-folder-open-o:before {
+  content: ""; }
+
+.xbox-icon-smile-o:before {
+  content: ""; }
+
+.xbox-icon-frown-o:before {
+  content: ""; }
+
+.xbox-icon-meh-o:before {
+  content: ""; }
+
+.xbox-icon-gamepad:before {
+  content: ""; }
+
+.xbox-icon-keyboard-o:before {
+  content: ""; }
+
+.xbox-icon-flag-o:before {
+  content: ""; }
+
+.xbox-icon-flag-checkered:before {
+  content: ""; }
+
+.xbox-icon-terminal:before {
+  content: ""; }
+
+.xbox-icon-code:before {
+  content: ""; }
+
+.xbox-icon-mail-reply-all:before,
+.xbox-icon-reply-all:before {
+  content: ""; }
+
+.xbox-icon-star-half-empty:before,
+.xbox-icon-star-half-full:before,
+.xbox-icon-star-half-o:before {
+  content: ""; }
+
+.xbox-icon-location-arrow:before {
+  content: ""; }
+
+.xbox-icon-crop:before {
+  content: ""; }
+
+.xbox-icon-code-fork:before {
+  content: ""; }
+
+.xbox-icon-unlink:before,
+.xbox-icon-chain-broken:before {
+  content: ""; }
+
+.xbox-icon-question:before {
+  content: ""; }
+
+.xbox-icon-info:before {
+  content: ""; }
+
+.xbox-icon-exclamation:before {
+  content: ""; }
+
+.xbox-icon-superscript:before {
+  content: ""; }
+
+.xbox-icon-subscript:before {
+  content: ""; }
+
+.xbox-icon-eraser:before {
+  content: ""; }
+
+.xbox-icon-puzzle-piece:before {
+  content: ""; }
+
+.xbox-icon-microphone:before {
+  content: ""; }
+
+.xbox-icon-microphone-slash:before {
+  content: ""; }
+
+.xbox-icon-shield:before {
+  content: ""; }
+
+.xbox-icon-calendar-o:before {
+  content: ""; }
+
+.xbox-icon-fire-extinguisher:before {
+  content: ""; }
+
+.xbox-icon-rocket:before {
+  content: ""; }
+
+.xbox-icon-maxcdn:before {
+  content: ""; }
+
+.xbox-icon-chevron-circle-left:before {
+  content: ""; }
+
+.xbox-icon-chevron-circle-right:before {
+  content: ""; }
+
+.xbox-icon-chevron-circle-up:before {
+  content: ""; }
+
+.xbox-icon-chevron-circle-down:before {
+  content: ""; }
+
+.xbox-icon-html5:before {
+  content: ""; }
+
+.xbox-icon-css3:before {
+  content: ""; }
+
+.xbox-icon-anchor:before {
+  content: ""; }
+
+.xbox-icon-unlock-alt:before {
+  content: ""; }
+
+.xbox-icon-bullseye:before {
+  content: ""; }
+
+.xbox-icon-ellipsis-h:before {
+  content: ""; }
+
+.xbox-icon-ellipsis-v:before {
+  content: ""; }
+
+.xbox-icon-rss-square:before {
+  content: ""; }
+
+.xbox-icon-play-circle:before {
+  content: ""; }
+
+.xbox-icon-ticket:before {
+  content: ""; }
+
+.xbox-icon-minus-square:before {
+  content: ""; }
+
+.xbox-icon-minus-square-o:before {
+  content: ""; }
+
+.xbox-icon-level-up:before {
+  content: ""; }
+
+.xbox-icon-level-down:before {
+  content: ""; }
+
+.xbox-icon-check-square:before {
+  content: ""; }
+
+.xbox-icon-pencil-square:before {
+  content: ""; }
+
+.xbox-icon-external-link-square:before {
+  content: ""; }
+
+.xbox-icon-share-square:before {
+  content: ""; }
+
+.xbox-icon-compass:before {
+  content: ""; }
+
+.xbox-icon-toggle-down:before,
+.xbox-icon-caret-square-o-down:before {
+  content: ""; }
+
+.xbox-icon-toggle-up:before,
+.xbox-icon-caret-square-o-up:before {
+  content: ""; }
+
+.xbox-icon-toggle-right:before,
+.xbox-icon-caret-square-o-right:before {
+  content: ""; }
+
+.xbox-icon-euro:before,
+.xbox-icon-eur:before {
+  content: ""; }
+
+.xbox-icon-gbp:before {
+  content: ""; }
+
+.xbox-icon-dollar:before,
+.xbox-icon-usd:before {
+  content: ""; }
+
+.xbox-icon-rupee:before,
+.xbox-icon-inr:before {
+  content: ""; }
+
+.xbox-icon-cny:before,
+.xbox-icon-rmb:before,
+.xbox-icon-yen:before,
+.xbox-icon-jpy:before {
+  content: ""; }
+
+.xbox-icon-ruble:before,
+.xbox-icon-rouble:before,
+.xbox-icon-rub:before {
+  content: ""; }
+
+.xbox-icon-won:before,
+.xbox-icon-krw:before {
+  content: ""; }
+
+.xbox-icon-bitcoin:before,
+.xbox-icon-btc:before {
+  content: ""; }
+
+.xbox-icon-file:before {
+  content: ""; }
+
+.xbox-icon-file-text:before {
+  content: ""; }
+
+.xbox-icon-sort-alpha-asc:before {
+  content: ""; }
+
+.xbox-icon-sort-alpha-desc:before {
+  content: ""; }
+
+.xbox-icon-sort-amount-asc:before {
+  content: ""; }
+
+.xbox-icon-sort-amount-desc:before {
+  content: ""; }
+
+.xbox-icon-sort-numeric-asc:before {
+  content: ""; }
+
+.xbox-icon-sort-numeric-desc:before {
+  content: ""; }
+
+.xbox-icon-thumbs-up:before {
+  content: ""; }
+
+.xbox-icon-thumbs-down:before {
+  content: ""; }
+
+.xbox-icon-youtube-square:before {
+  content: ""; }
+
+.xbox-icon-youtube:before {
+  content: ""; }
+
+.xbox-icon-xing:before {
+  content: ""; }
+
+.xbox-icon-xing-square:before {
+  content: ""; }
+
+.xbox-icon-youtube-play:before {
+  content: ""; }
+
+.xbox-icon-dropbox:before {
+  content: ""; }
+
+.xbox-icon-stack-overflow:before {
+  content: ""; }
+
+.xbox-icon-instagram:before {
+  content: ""; }
+
+.xbox-icon-flickr:before {
+  content: ""; }
+
+.xbox-icon-adn:before {
+  content: ""; }
+
+.xbox-icon-bitbucket:before {
+  content: ""; }
+
+.xbox-icon-bitbucket-square:before {
+  content: ""; }
+
+.xbox-icon-tumblr:before {
+  content: ""; }
+
+.xbox-icon-tumblr-square:before {
+  content: ""; }
+
+.xbox-icon-long-arrow-down:before {
+  content: ""; }
+
+.xbox-icon-long-arrow-up:before {
+  content: ""; }
+
+.xbox-icon-long-arrow-left:before {
+  content: ""; }
+
+.xbox-icon-long-arrow-right:before {
+  content: ""; }
+
+.xbox-icon-apple:before {
+  content: ""; }
+
+.xbox-icon-windows:before {
+  content: ""; }
+
+.xbox-icon-android:before {
+  content: ""; }
+
+.xbox-icon-linux:before {
+  content: ""; }
+
+.xbox-icon-dribbble:before {
+  content: ""; }
+
+.xbox-icon-skype:before {
+  content: ""; }
+
+.xbox-icon-foursquare:before {
+  content: ""; }
+
+.xbox-icon-trello:before {
+  content: ""; }
+
+.xbox-icon-female:before {
+  content: ""; }
+
+.xbox-icon-male:before {
+  content: ""; }
+
+.xbox-icon-gittip:before,
+.xbox-icon-gratipay:before {
+  content: ""; }
+
+.xbox-icon-sun-o:before {
+  content: ""; }
+
+.xbox-icon-moon-o:before {
+  content: ""; }
+
+.xbox-icon-archive:before {
+  content: ""; }
+
+.xbox-icon-bug:before {
+  content: ""; }
+
+.xbox-icon-vk:before {
+  content: ""; }
+
+.xbox-icon-weibo:before {
+  content: ""; }
+
+.xbox-icon-renren:before {
+  content: ""; }
+
+.xbox-icon-pagelines:before {
+  content: ""; }
+
+.xbox-icon-stack-exchange:before {
+  content: ""; }
+
+.xbox-icon-arrow-circle-o-right:before {
+  content: ""; }
+
+.xbox-icon-arrow-circle-o-left:before {
+  content: ""; }
+
+.xbox-icon-toggle-left:before,
+.xbox-icon-caret-square-o-left:before {
+  content: ""; }
+
+.xbox-icon-dot-circle-o:before {
+  content: ""; }
+
+.xbox-icon-wheelchair:before {
+  content: ""; }
+
+.xbox-icon-vimeo-square:before {
+  content: ""; }
+
+.xbox-icon-turkish-lira:before,
+.xbox-icon-try:before {
+  content: ""; }
+
+.xbox-icon-plus-square-o:before {
+  content: ""; }
+
+.xbox-icon-space-shuttle:before {
+  content: ""; }
+
+.xbox-icon-slack:before {
+  content: ""; }
+
+.xbox-icon-envelope-square:before {
+  content: ""; }
+
+.xbox-icon-wordpress:before {
+  content: ""; }
+
+.xbox-icon-openid:before {
+  content: ""; }
+
+.xbox-icon-institution:before,
+.xbox-icon-bank:before,
+.xbox-icon-university:before {
+  content: ""; }
+
+.xbox-icon-mortar-board:before,
+.xbox-icon-graduation-cap:before {
+  content: ""; }
+
+.xbox-icon-yahoo:before {
+  content: ""; }
+
+.xbox-icon-google:before {
+  content: ""; }
+
+.xbox-icon-reddit:before {
+  content: ""; }
+
+.xbox-icon-reddit-square:before {
+  content: ""; }
+
+.xbox-icon-stumbleupon-circle:before {
+  content: ""; }
+
+.xbox-icon-stumbleupon:before {
+  content: ""; }
+
+.xbox-icon-delicious:before {
+  content: ""; }
+
+.xbox-icon-digg:before {
+  content: ""; }
+
+.xbox-icon-pied-piper-pp:before {
+  content: ""; }
+
+.xbox-icon-pied-piper-alt:before {
+  content: ""; }
+
+.xbox-icon-drupal:before {
+  content: ""; }
+
+.xbox-icon-joomla:before {
+  content: ""; }
+
+.xbox-icon-language:before {
+  content: ""; }
+
+.xbox-icon-fax:before {
+  content: ""; }
+
+.xbox-icon-building:before {
+  content: ""; }
+
+.xbox-icon-child:before {
+  content: ""; }
+
+.xbox-icon-paw:before {
+  content: ""; }
+
+.xbox-icon-spoon:before {
+  content: ""; }
+
+.xbox-icon-cube:before {
+  content: ""; }
+
+.xbox-icon-cubes:before {
+  content: ""; }
+
+.xbox-icon-behance:before {
+  content: ""; }
+
+.xbox-icon-behance-square:before {
+  content: ""; }
+
+.xbox-icon-steam:before {
+  content: ""; }
+
+.xbox-icon-steam-square:before {
+  content: ""; }
+
+.xbox-icon-recycle:before {
+  content: ""; }
+
+.xbox-icon-automobile:before,
+.xbox-icon-car:before {
+  content: ""; }
+
+.xbox-icon-cab:before,
+.xbox-icon-taxi:before {
+  content: ""; }
+
+.xbox-icon-tree:before {
+  content: ""; }
+
+.xbox-icon-spotify:before {
+  content: ""; }
+
+.xbox-icon-deviantart:before {
+  content: ""; }
+
+.xbox-icon-soundcloud:before {
+  content: ""; }
+
+.xbox-icon-database:before {
+  content: ""; }
+
+.xbox-icon-file-pdf-o:before {
+  content: ""; }
+
+.xbox-icon-file-word-o:before {
+  content: ""; }
+
+.xbox-icon-file-excel-o:before {
+  content: ""; }
+
+.xbox-icon-file-powerpoint-o:before {
+  content: ""; }
+
+.xbox-icon-file-photo-o:before,
+.xbox-icon-file-picture-o:before,
+.xbox-icon-file-image-o:before {
+  content: ""; }
+
+.xbox-icon-file-zip-o:before,
+.xbox-icon-file-archive-o:before {
+  content: ""; }
+
+.xbox-icon-file-sound-o:before,
+.xbox-icon-file-audio-o:before {
+  content: ""; }
+
+.xbox-icon-file-movie-o:before,
+.xbox-icon-file-video-o:before {
+  content: ""; }
+
+.xbox-icon-file-code-o:before {
+  content: ""; }
+
+.xbox-icon-vine:before {
+  content: ""; }
+
+.xbox-icon-codepen:before {
+  content: ""; }
+
+.xbox-icon-jsfiddle:before {
+  content: ""; }
+
+.xbox-icon-life-bouy:before,
+.xbox-icon-life-buoy:before,
+.xbox-icon-life-saver:before,
+.xbox-icon-support:before,
+.xbox-icon-life-ring:before {
+  content: ""; }
+
+.xbox-icon-circle-o-notch:before {
+  content: ""; }
+
+.xbox-icon-ra:before,
+.xbox-icon-resistance:before,
+.xbox-icon-rebel:before {
+  content: ""; }
+
+.xbox-icon-ge:before,
+.xbox-icon-empire:before {
+  content: ""; }
+
+.xbox-icon-git-square:before {
+  content: ""; }
+
+.xbox-icon-git:before {
+  content: ""; }
+
+.xbox-icon-y-combinator-square:before,
+.xbox-icon-yc-square:before,
+.xbox-icon-hacker-news:before {
+  content: ""; }
+
+.xbox-icon-tencent-weibo:before {
+  content: ""; }
+
+.xbox-icon-qq:before {
+  content: ""; }
+
+.xbox-icon-wechat:before,
+.xbox-icon-weixin:before {
+  content: ""; }
+
+.xbox-icon-send:before,
+.xbox-icon-paper-plane:before {
+  content: ""; }
+
+.xbox-icon-send-o:before,
+.xbox-icon-paper-plane-o:before {
+  content: ""; }
+
+.xbox-icon-history:before {
+  content: ""; }
+
+.xbox-icon-circle-thin:before {
+  content: ""; }
+
+.xbox-icon-header:before {
+  content: ""; }
+
+.xbox-icon-paragraph:before {
+  content: ""; }
+
+.xbox-icon-sliders:before {
+  content: ""; }
+
+.xbox-icon-share-alt:before {
+  content: ""; }
+
+.xbox-icon-share-alt-square:before {
+  content: ""; }
+
+.xbox-icon-bomb:before {
+  content: ""; }
+
+.xbox-icon-soccer-ball-o:before,
+.xbox-icon-futbol-o:before {
+  content: ""; }
+
+.xbox-icon-tty:before {
+  content: ""; }
+
+.xbox-icon-binoculars:before {
+  content: ""; }
+
+.xbox-icon-plug:before {
+  content: ""; }
+
+.xbox-icon-slideshare:before {
+  content: ""; }
+
+.xbox-icon-twitch:before {
+  content: ""; }
+
+.xbox-icon-yelp:before {
+  content: ""; }
+
+.xbox-icon-newspaper-o:before {
+  content: ""; }
+
+.xbox-icon-wifi:before {
+  content: ""; }
+
+.xbox-icon-calculator:before {
+  content: ""; }
+
+.xbox-icon-paypal:before {
+  content: ""; }
+
+.xbox-icon-google-wallet:before {
+  content: ""; }
+
+.xbox-icon-cc-visa:before {
+  content: ""; }
+
+.xbox-icon-cc-mastercard:before {
+  content: ""; }
+
+.xbox-icon-cc-discover:before {
+  content: ""; }
+
+.xbox-icon-cc-amex:before {
+  content: ""; }
+
+.xbox-icon-cc-paypal:before {
+  content: ""; }
+
+.xbox-icon-cc-stripe:before {
+  content: ""; }
+
+.xbox-icon-bell-slash:before {
+  content: ""; }
+
+.xbox-icon-bell-slash-o:before {
+  content: ""; }
+
+.xbox-icon-trash:before {
+  content: ""; }
+
+.xbox-icon-copyright:before {
+  content: ""; }
+
+.xbox-icon-at:before {
+  content: ""; }
+
+.xbox-icon-eyedropper:before {
+  content: ""; }
+
+.xbox-icon-paint-brush:before {
+  content: ""; }
+
+.xbox-icon-birthday-cake:before {
+  content: ""; }
+
+.xbox-icon-area-chart:before {
+  content: ""; }
+
+.xbox-icon-pie-chart:before {
+  content: ""; }
+
+.xbox-icon-line-chart:before {
+  content: ""; }
+
+.xbox-icon-lastfm:before {
+  content: ""; }
+
+.xbox-icon-lastfm-square:before {
+  content: ""; }
+
+.xbox-icon-toggle-off:before {
+  content: ""; }
+
+.xbox-icon-toggle-on:before {
+  content: ""; }
+
+.xbox-icon-bicycle:before {
+  content: ""; }
+
+.xbox-icon-bus:before {
+  content: ""; }
+
+.xbox-icon-ioxhost:before {
+  content: ""; }
+
+.xbox-icon-angellist:before {
+  content: ""; }
+
+.xbox-icon-cc:before {
+  content: ""; }
+
+.xbox-icon-shekel:before,
+.xbox-icon-sheqel:before,
+.xbox-icon-ils:before {
+  content: ""; }
+
+.xbox-icon-meanpath:before {
+  content: ""; }
+
+.xbox-icon-buysellads:before {
+  content: ""; }
+
+.xbox-icon-connectdevelop:before {
+  content: ""; }
+
+.xbox-icon-dashcube:before {
+  content: ""; }
+
+.xbox-icon-forumbee:before {
+  content: ""; }
+
+.xbox-icon-leanpub:before {
+  content: ""; }
+
+.xbox-icon-sellsy:before {
+  content: ""; }
+
+.xbox-icon-shirtsinbulk:before {
+  content: ""; }
+
+.xbox-icon-simplybuilt:before {
+  content: ""; }
+
+.xbox-icon-skyatlas:before {
+  content: ""; }
+
+.xbox-icon-cart-plus:before {
+  content: ""; }
+
+.xbox-icon-cart-arrow-down:before {
+  content: ""; }
+
+.xbox-icon-diamond:before {
+  content: ""; }
+
+.xbox-icon-ship:before {
+  content: ""; }
+
+.xbox-icon-user-secret:before {
+  content: ""; }
+
+.xbox-icon-motorcycle:before {
+  content: ""; }
+
+.xbox-icon-street-view:before {
+  content: ""; }
+
+.xbox-icon-heartbeat:before {
+  content: ""; }
+
+.xbox-icon-venus:before {
+  content: ""; }
+
+.xbox-icon-mars:before {
+  content: ""; }
+
+.xbox-icon-mercury:before {
+  content: ""; }
+
+.xbox-icon-intersex:before,
+.xbox-icon-transgender:before {
+  content: ""; }
+
+.xbox-icon-transgender-alt:before {
+  content: ""; }
+
+.xbox-icon-venus-double:before {
+  content: ""; }
+
+.xbox-icon-mars-double:before {
+  content: ""; }
+
+.xbox-icon-venus-mars:before {
+  content: ""; }
+
+.xbox-icon-mars-stroke:before {
+  content: ""; }
+
+.xbox-icon-mars-stroke-v:before {
+  content: ""; }
+
+.xbox-icon-mars-stroke-h:before {
+  content: ""; }
+
+.xbox-icon-neuter:before {
+  content: ""; }
+
+.xbox-icon-genderless:before {
+  content: ""; }
+
+.xbox-icon-facebook-official:before {
+  content: ""; }
+
+.xbox-icon-pinterest-p:before {
+  content: ""; }
+
+.xbox-icon-whatsapp:before {
+  content: ""; }
+
+.xbox-icon-server:before {
+  content: ""; }
+
+.xbox-icon-user-plus:before {
+  content: ""; }
+
+.xbox-icon-user-times:before {
+  content: ""; }
+
+.xbox-icon-hotel:before,
+.xbox-icon-bed:before {
+  content: ""; }
+
+.xbox-icon-viacoin:before {
+  content: ""; }
+
+.xbox-icon-train:before {
+  content: ""; }
+
+.xbox-icon-subway:before {
+  content: ""; }
+
+.xbox-icon-medium:before {
+  content: ""; }
+
+.xbox-icon-yc:before,
+.xbox-icon-y-combinator:before {
+  content: ""; }
+
+.xbox-icon-optin-monster:before {
+  content: ""; }
+
+.xbox-icon-opencart:before {
+  content: ""; }
+
+.xbox-icon-expeditedssl:before {
+  content: ""; }
+
+.xbox-icon-battery-4:before,
+.xbox-icon-battery:before,
+.xbox-icon-battery-full:before {
+  content: ""; }
+
+.xbox-icon-battery-3:before,
+.xbox-icon-battery-three-quarters:before {
+  content: ""; }
+
+.xbox-icon-battery-2:before,
+.xbox-icon-battery-half:before {
+  content: ""; }
+
+.xbox-icon-battery-1:before,
+.xbox-icon-battery-quarter:before {
+  content: ""; }
+
+.xbox-icon-battery-0:before,
+.xbox-icon-battery-empty:before {
+  content: ""; }
+
+.xbox-icon-mouse-pointer:before {
+  content: ""; }
+
+.xbox-icon-i-cursor:before {
+  content: ""; }
+
+.xbox-icon-object-group:before {
+  content: ""; }
+
+.xbox-icon-object-ungroup:before {
+  content: ""; }
+
+.xbox-icon-sticky-note:before {
+  content: ""; }
+
+.xbox-icon-sticky-note-o:before {
+  content: ""; }
+
+.xbox-icon-cc-jcb:before {
+  content: ""; }
+
+.xbox-icon-cc-diners-club:before {
+  content: ""; }
+
+.xbox-icon-clone:before {
+  content: ""; }
+
+.xbox-icon-balance-scale:before {
+  content: ""; }
+
+.xbox-icon-hourglass-o:before {
+  content: ""; }
+
+.xbox-icon-hourglass-1:before,
+.xbox-icon-hourglass-start:before {
+  content: ""; }
+
+.xbox-icon-hourglass-2:before,
+.xbox-icon-hourglass-half:before {
+  content: ""; }
+
+.xbox-icon-hourglass-3:before,
+.xbox-icon-hourglass-end:before {
+  content: ""; }
+
+.xbox-icon-hourglass:before {
+  content: ""; }
+
+.xbox-icon-hand-grab-o:before,
+.xbox-icon-hand-rock-o:before {
+  content: ""; }
+
+.xbox-icon-hand-stop-o:before,
+.xbox-icon-hand-paper-o:before {
+  content: ""; }
+
+.xbox-icon-hand-scissors-o:before {
+  content: ""; }
+
+.xbox-icon-hand-lizard-o:before {
+  content: ""; }
+
+.xbox-icon-hand-spock-o:before {
+  content: ""; }
+
+.xbox-icon-hand-pointer-o:before {
+  content: ""; }
+
+.xbox-icon-hand-peace-o:before {
+  content: ""; }
+
+.xbox-icon-trademark:before {
+  content: ""; }
+
+.xbox-icon-registered:before {
+  content: ""; }
+
+.xbox-icon-creative-commons:before {
+  content: ""; }
+
+.xbox-icon-gg:before {
+  content: ""; }
+
+.xbox-icon-gg-circle:before {
+  content: ""; }
+
+.xbox-icon-tripadvisor:before {
+  content: ""; }
+
+.xbox-icon-odnoklassniki:before {
+  content: ""; }
+
+.xbox-icon-odnoklassniki-square:before {
+  content: ""; }
+
+.xbox-icon-get-pocket:before {
+  content: ""; }
+
+.xbox-icon-wikipedia-w:before {
+  content: ""; }
+
+.xbox-icon-safari:before {
+  content: ""; }
+
+.xbox-icon-chrome:before {
+  content: ""; }
+
+.xbox-icon-firefox:before {
+  content: ""; }
+
+.xbox-icon-opera:before {
+  content: ""; }
+
+.xbox-icon-internet-explorer:before {
+  content: ""; }
+
+.xbox-icon-tv:before,
+.xbox-icon-television:before {
+  content: ""; }
+
+.xbox-icon-contao:before {
+  content: ""; }
+
+.xbox-icon-500px:before {
+  content: ""; }
+
+.xbox-icon-amazon:before {
+  content: ""; }
+
+.xbox-icon-calendar-plus-o:before {
+  content: ""; }
+
+.xbox-icon-calendar-minus-o:before {
+  content: ""; }
+
+.xbox-icon-calendar-times-o:before {
+  content: ""; }
+
+.xbox-icon-calendar-check-o:before {
+  content: ""; }
+
+.xbox-icon-industry:before {
+  content: ""; }
+
+.xbox-icon-map-pin:before {
+  content: ""; }
+
+.xbox-icon-map-signs:before {
+  content: ""; }
+
+.xbox-icon-map-o:before {
+  content: ""; }
+
+.xbox-icon-map:before {
+  content: ""; }
+
+.xbox-icon-commenting:before {
+  content: ""; }
+
+.xbox-icon-commenting-o:before {
+  content: ""; }
+
+.xbox-icon-houzz:before {
+  content: ""; }
+
+.xbox-icon-vimeo:before {
+  content: ""; }
+
+.xbox-icon-black-tie:before {
+  content: ""; }
+
+.xbox-icon-fonticons:before {
+  content: ""; }
+
+.xbox-icon-reddit-alien:before {
+  content: ""; }
+
+.xbox-icon-edge:before {
+  content: ""; }
+
+.xbox-icon-credit-card-alt:before {
+  content: ""; }
+
+.xbox-icon-codiepie:before {
+  content: ""; }
+
+.xbox-icon-modx:before {
+  content: ""; }
+
+.xbox-icon-fort-awesome:before {
+  content: ""; }
+
+.xbox-icon-usb:before {
+  content: ""; }
+
+.xbox-icon-product-hunt:before {
+  content: ""; }
+
+.xbox-icon-mixcloud:before {
+  content: ""; }
+
+.xbox-icon-scribd:before {
+  content: ""; }
+
+.xbox-icon-pause-circle:before {
+  content: ""; }
+
+.xbox-icon-pause-circle-o:before {
+  content: ""; }
+
+.xbox-icon-stop-circle:before {
+  content: ""; }
+
+.xbox-icon-stop-circle-o:before {
+  content: ""; }
+
+.xbox-icon-shopping-bag:before {
+  content: ""; }
+
+.xbox-icon-shopping-basket:before {
+  content: ""; }
+
+.xbox-icon-hashtag:before {
+  content: ""; }
+
+.xbox-icon-bluetooth:before {
+  content: ""; }
+
+.xbox-icon-bluetooth-b:before {
+  content: ""; }
+
+.xbox-icon-percent:before {
+  content: ""; }
+
+.xbox-icon-gitlab:before {
+  content: ""; }
+
+.xbox-icon-wpbeginner:before {
+  content: ""; }
+
+.xbox-icon-wpforms:before {
+  content: ""; }
+
+.xbox-icon-envira:before {
+  content: ""; }
+
+.xbox-icon-universal-access:before {
+  content: ""; }
+
+.xbox-icon-wheelchair-alt:before {
+  content: ""; }
+
+.xbox-icon-question-circle-o:before {
+  content: ""; }
+
+.xbox-icon-blind:before {
+  content: ""; }
+
+.xbox-icon-audio-description:before {
+  content: ""; }
+
+.xbox-icon-volume-control-phone:before {
+  content: ""; }
+
+.xbox-icon-braille:before {
+  content: ""; }
+
+.xbox-icon-assistive-listening-systems:before {
+  content: ""; }
+
+.xbox-icon-asl-interpreting:before,
+.xbox-icon-american-sign-language-interpreting:before {
+  content: ""; }
+
+.xbox-icon-deafness:before,
+.xbox-icon-hard-of-hearing:before,
+.xbox-icon-deaf:before {
+  content: ""; }
+
+.xbox-icon-glide:before {
+  content: ""; }
+
+.xbox-icon-glide-g:before {
+  content: ""; }
+
+.xbox-icon-signing:before,
+.xbox-icon-sign-language:before {
+  content: ""; }
+
+.xbox-icon-low-vision:before {
+  content: ""; }
+
+.xbox-icon-viadeo:before {
+  content: ""; }
+
+.xbox-icon-viadeo-square:before {
+  content: ""; }
+
+.xbox-icon-snapchat:before {
+  content: ""; }
+
+.xbox-icon-snapchat-ghost:before {
+  content: ""; }
+
+.xbox-icon-snapchat-square:before {
+  content: ""; }
+
+.xbox-icon-pied-piper:before {
+  content: ""; }
+
+.xbox-icon-first-order:before {
+  content: ""; }
+
+.xbox-icon-yoast:before {
+  content: ""; }
+
+.xbox-icon-themeisle:before {
+  content: ""; }
+
+.xbox-icon-google-plus-circle:before,
+.xbox-icon-google-plus-official:before {
+  content: ""; }
+
+.xbox-icon-fa:before,
+.xbox-icon-font-awesome:before {
+  content: ""; }
+
+.xbox-icon-handshake-o:before {
+  content: ""; }
+
+.xbox-icon-envelope-open:before {
+  content: ""; }
+
+.xbox-icon-envelope-open-o:before {
+  content: ""; }
+
+.xbox-icon-linode:before {
+  content: ""; }
+
+.xbox-icon-address-book:before {
+  content: ""; }
+
+.xbox-icon-address-book-o:before {
+  content: ""; }
+
+.xbox-icon-vcard:before,
+.xbox-icon-address-card:before {
+  content: ""; }
+
+.xbox-icon-vcard-o:before,
+.xbox-icon-address-card-o:before {
+  content: ""; }
+
+.xbox-icon-user-circle:before {
+  content: ""; }
+
+.xbox-icon-user-circle-o:before {
+  content: ""; }
+
+.xbox-icon-user-o:before {
+  content: ""; }
+
+.xbox-icon-id-badge:before {
+  content: ""; }
+
+.xbox-icon-drivers-license:before,
+.xbox-icon-id-card:before {
+  content: ""; }
+
+.xbox-icon-drivers-license-o:before,
+.xbox-icon-id-card-o:before {
+  content: ""; }
+
+.xbox-icon-quora:before {
+  content: ""; }
+
+.xbox-icon-free-code-camp:before {
+  content: ""; }
+
+.xbox-icon-telegram:before {
+  content: ""; }
+
+.xbox-icon-thermometer-4:before,
+.xbox-icon-thermometer:before,
+.xbox-icon-thermometer-full:before {
+  content: ""; }
+
+.xbox-icon-thermometer-3:before,
+.xbox-icon-thermometer-three-quarters:before {
+  content: ""; }
+
+.xbox-icon-thermometer-2:before,
+.xbox-icon-thermometer-half:before {
+  content: ""; }
+
+.xbox-icon-thermometer-1:before,
+.xbox-icon-thermometer-quarter:before {
+  content: ""; }
+
+.xbox-icon-thermometer-0:before,
+.xbox-icon-thermometer-empty:before {
+  content: ""; }
+
+.xbox-icon-shower:before {
+  content: ""; }
+
+.xbox-icon-bathtub:before,
+.xbox-icon-s15:before,
+.xbox-icon-bath:before {
+  content: ""; }
+
+.xbox-icon-podcast:before {
+  content: ""; }
+
+.xbox-icon-window-maximize:before {
+  content: ""; }
+
+.xbox-icon-window-minimize:before {
+  content: ""; }
+
+.xbox-icon-window-restore:before {
+  content: ""; }
+
+.xbox-icon-times-rectangle:before,
+.xbox-icon-window-close:before {
+  content: ""; }
+
+.xbox-icon-times-rectangle-o:before,
+.xbox-icon-window-close-o:before {
+  content: ""; }
+
+.xbox-icon-bandcamp:before {
+  content: ""; }
+
+.xbox-icon-grav:before {
+  content: ""; }
+
+.xbox-icon-etsy:before {
+  content: ""; }
+
+.xbox-icon-imdb:before {
+  content: ""; }
+
+.xbox-icon-ravelry:before {
+  content: ""; }
+
+.xbox-icon-eercast:before {
+  content: ""; }
+
+.xbox-icon-microchip:before {
+  content: ""; }
+
+.xbox-icon-snowflake-o:before {
+  content: ""; }
+
+.xbox-icon-superpowers:before {
+  content: ""; }
+
+.xbox-icon-wpexplorer:before {
+  content: ""; }
+
+.xbox-icon-meetup:before {
+  content: ""; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto; }
